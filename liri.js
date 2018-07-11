@@ -24,6 +24,11 @@ var client = new Twitter(keys.twitter);
 console.log(spotify);
 console.log(client);
 
+// Writes to the log.txt file
+var getArtistNames = function(artist) {
+  return artist.name;
+};
+
 // Function for running a Spotify search
 var getMeSpotify = function(songName) {
   if (songName === undefined) {
